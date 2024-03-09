@@ -12,7 +12,8 @@ Once `slickwit` theme is in the `.oh-my-bash/theme` directory then you can chang
 
 ```shell
 # Path to your oh-my-bash installation.
-export OSH='/c/Users/dyken/.oh-my-bash'
+export OSH='/.oh-my-bash'
+
 OSH_THEME="slickwit" # folder name of the theme
 source "$OSH"/oh-my-bash.sh
 ```
