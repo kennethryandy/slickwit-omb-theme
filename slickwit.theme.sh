@@ -15,7 +15,7 @@ function __slickwit_header() {
  printf "===================${_omb_term_bold_teal}${_omb_term_background_black}  $(date "+%A, %b %d, %Y")  ${_omb_term_reset}===================${_omb_term_reset}"
 }
 
-# Header
+# Header 
 echo $(__slickwit_header)
 if [ -d "$HOME/AppData/Roaming/nvm" ]; then
  e_bold "node version: ${_omb_term_underline_lime}$(nvm current)${_omb_term_reset}";
@@ -48,5 +48,5 @@ function _omb_theme_PROMPT_COMMAND() {
  PS1+="\n$EMOJI${_omb_prompt_bold_green}→ ${_omb_prompt_reset_color}"
 }
 THEME_CLOCK_COLOR=${THEME_CLOCK_COLOR:-"$_omb_theme_slickwit_prompt_red"}
-THEME_CLOCK_FORMAT=${THEME_CLOCK_FORMAT:-"%H:%M%P"}
+THEME_CLOCK_FORMAT=${THEME_CLOCK_FORMAT:-"%I:%M%P"}
 _omb_util_add_prompt_command _omb_theme_PROMPT_COMMAND
