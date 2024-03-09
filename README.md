@@ -8,7 +8,7 @@ _[Oh My BASH!](https://ohmybash.nntoan.com/)_
 
 _[Oh My BASH! repository](https://github.com/ohmybash/oh-my-bash.git)_
 
-Once `slickwit` theme is in the `.oh-my-bash/theme` directory then you can change your theme in the `.bashrc` file.
+Once `slickwit` theme is in the `.oh-my-bash/themes` directory then you can change your theme in the `.bashrc` file.
 
 ```shell
 # Path to your oh-my-bash installation.
