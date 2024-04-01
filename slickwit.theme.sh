@@ -1,8 +1,12 @@
 #! bash oh-my-bash.module
 
 
-# Print tab name
-echo -ne "\033];${PWD/*\//}\007";
+function __slickwit_print_title() {
+  # Print tab name
+  echo -ne "\033];${PWD/*\//}\007";
+}
+
+__slickwit_print_title;
 
 _omb_theme_slickwit_prompt_red='\e[0;31m' # Red
 # txtred='\e[0;31m' # Red
@@ -28,6 +32,7 @@ function __slickwit_clock {
 
 function __slick_new_tab_same_dir() {
   printf "\e]9;9;%s\e\\" "`cygpath -w "$PWD" -C ANSI`";
+  __slickwit_print_title;
 }
 
 __slickwit_git_info () {
